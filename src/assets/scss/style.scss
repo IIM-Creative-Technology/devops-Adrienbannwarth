@@ -1,0 +1,30 @@
+/* UTILS */
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/animations';
+@import './utils/state';
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400&display=swap');
+
+/* COMPONENTS */
+@import './components/layout';
+@import './components/nav';
+@import './components/cursor';
+@import './components/btn';
+@import './components/slider';
+@import './components/404';
+@import './components/scroll';
+@import './utils/transitions';
+
+#mybar {
+  position: fixed;
+  z-index: 1000;
+  bottom: 5px;
+  height: 3px;
+  background-color: $color-black;
+}
+
+.text-anim {
+  padding: 300px;
+  font-size: 6vw;
+}

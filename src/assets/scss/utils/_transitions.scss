@@ -1,0 +1,56 @@
+////////////////////////
+// Transition Scroll //
+///////////////////////
+.before-enter {
+  transform: translateX(-100px);
+  transition: all 1s ease-out;
+
+  opacity: 0;
+}
+
+.enter {
+  transform: translateX(0);
+
+  opacity: 1;
+}
+
+////////////////////////
+// Transition Router //
+///////////////////////
+.fade-enter-active,
+.fade-leave-active {
+
+  .nav-projet-link {
+    transition: all 0.8s ease;
+
+    opacity: 0;
+  }
+}
+
+.fade-enter,
+.fade-leave-to {
+  transition: all 0.8s ease;
+}
+
+////////////////////////
+// Transition Sldier //
+///////////////////////
+
+.images-enter-active,
+.images-leave-active {
+  position: absolute;
+
+  transition: 0s ease-out;
+}
+
+.images-enter {
+  transform: translate(100%, 0);
+
+  opacity: 1;
+}
+
+.images-leave-to {
+  transform: translate(-100%, 0);
+
+  opacity: 0;
+}

@@ -1,0 +1,243 @@
+/* PROJET NAV */
+
+.nav-projet {
+  z-index: 10;
+  width: 100%;
+
+  @include absolute-position;
+
+  @include sm {
+    top: 0;
+  }
+
+  a:nth-child(1) {
+    left: $left-nav-link-01;
+
+    @include sm {
+      top: $top-nav-link-01-sm;
+      left: 50%;
+    }
+  }
+
+  a:nth-child(2) {
+    left: $left-nav-link-02;
+
+    @include sm {
+      top: $top-nav-link-02-sm;
+      left: 50%;
+    }
+  }
+
+  a:nth-child(3) {
+    left: $left-nav-link-03;
+
+    @include sm {
+      top: $top-nav-link-03-sm;
+      left: 50%;
+    }
+  }
+
+  a:nth-child(4) {
+    left: $left-nav-link-04;
+
+    @include sm {
+      top: $top-nav-link-04-sm;
+      left: 50%;
+    }
+  }
+
+  a:nth-child(5) {
+    left: $left-nav-link-05;
+
+    @include sm {
+      top: $top-nav-link-05-sm;
+      left: 50%;
+    }
+  }
+
+  @include sm {
+    background-color: red;
+  }
+}
+
+.nav-projet-link {
+  position: fixed;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  transition: 1s ease-in-out;
+
+  color: $color-white;
+  font-family: $primary-font;
+  font-size: 8vw;
+  text-decoration: none;
+
+  @include sm {
+    font-size: 14vw;
+  }
+}
+
+.nav-projet:hover>* {
+  opacity: 0.3;
+}
+
+.nav-projet>a {
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.nav-name {
+  @include absolute-position;
+  top: 90%;
+  font-family: $secondary-font;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+/* VIEW PROJET DETAIL */
+
+.nav-link-01 {
+  left: $left-nav-link-01;
+  animation: fade-01 1s ease forwards;
+  animation-delay: 0.8s;
+
+  @include sm {
+    left: $top-nav-link-01-sm;
+    animation: fade-01-sm 1s ease forwards;
+    animation-delay: 0.8s;
+  }
+}
+
+.nav-link-02 {
+  left: $left-nav-link-02;
+  animation: fade-02 1s ease forwards;
+  animation-delay: 0.8s;
+
+  @include sm {
+    left: $top-nav-link-02-sm;
+    animation: fade-02-sm 1s ease forwards;
+    animation-delay: 0.8s;
+  }
+}
+
+.nav-link-03 {
+  left: $left-nav-link-03;
+  animation: fade-03 1s ease forwards;
+  animation-delay: 0.8s;
+
+  @include sm {
+    left: $top-nav-link-03-sm;
+    animation: fade-03-sm 1s ease forwards;
+    animation-delay: 0.8s;
+  }
+}
+
+.nav-link-04 {
+  left: $left-nav-link-04;
+  animation: fade-04 1s ease forwards;
+  animation-delay: 0.8s;
+
+  @include sm {
+    left: $top-nav-link-04-sm;
+    animation: fade-04-sm 1s ease forwards;
+    animation-delay: 0.8s;
+  }
+}
+
+.nav-link-05 {
+  left: $left-nav-link-05;
+  animation: fade-05 1s ease forwards;
+  animation-delay: 0.8s;
+
+  @include sm {
+    left: $top-nav-link-05-sm;
+    animation: fade-05-sm 1s ease forwards;
+    animation-delay: 0.8s;
+  }
+}
+
+.nav-prev,
+.nav-next {
+  position: fixed;
+  z-index: 11;
+  top: 50%;
+
+  color: $color-white;
+  font-family: $primary-font;
+  text-decoration: none;
+  mix-blend-mode: difference;
+}
+
+.nav-prev {
+  left: 30px;
+}
+
+.nav-next {
+  left: calc(100% - 45px);
+}
+
+/* LANG */
+
+.nav-lang {
+  display: flex;
+  position: absolute;
+  z-index: 11;
+  right: $margin;
+  bottom: $margin;
+  padding: 20px;
+
+  font-family: $secondary-font;
+  font-size: 10px;
+
+  label {
+    margin: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+/* Footer nav projet */
+
+.nav-footer-projet {
+  display: flex;
+  position: relative;
+  z-index: 1000;
+
+  align-items: center;
+  justify-content: space-around;
+  width: calc(100% - 100px);
+  height: 220px;
+  padding: 0 50px;
+
+  background-color: $color-black;
+
+  @include sm {
+    height: 100px;
+  }
+
+  a {
+    color: $color-white;
+    font-family: $primary-font;
+    font-size: 7vw;
+    text-decoration: none;
+  }
+}
+
+/* NAV BACK*/
+
+.nav-back,
+.nav-prolife {
+  position: fixed;
+  z-index: 1010;
+  top: 50px;
+  right: 50px;
+
+  color: $color-white;
+  font-family: $secondary-font;
+  font-size: 0.8rem;
+
+  mix-blend-mode: difference;
+}
