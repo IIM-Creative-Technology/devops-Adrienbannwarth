@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "sasslint": "sass-lint 'src/assets/scss/**/*.scss' -v -q",
-    "vuelint": "$ npx eslint src/**/*.vue"
+    "vuelint": "$ npx eslint src/**/*.vue",
+    "start": "node server.js"
   },
   "dependencies": {
     "circletype": "^2.3.0",
