@@ -13,14 +13,13 @@ jobs:
         uses: actions/setup-node@v1
         with: 
           node-version: 10.x
-      # Runs the Super-Linter action
-      - name: Run Super-Linter
-        uses: github/super-linter@v3
       - name: Install Packages and Build Application
         run: |
                 npm install -g @vue/cli yarn
                 yarn install
                 yarn build
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.5.6
         with:
